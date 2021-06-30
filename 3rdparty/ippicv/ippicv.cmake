@@ -36,7 +36,7 @@ endif()
 
 ExternalProject_Add(ext_ippicv
     PREFIX ippicv
-    URL https://raw.githubusercontent.com/opencv/opencv_3rdparty/${IPPICV_COMMIT}/ippicv/${OPENCV_ICV_NAME}
+    URL "https://raw.githubusercontent.com/opencv/opencv_3rdparty/${IPPICV_COMMIT}/ippicv/${OPENCV_ICV_NAME}"
     URL_HASH SHA256=${OPENCV_ICV_HASH}
     DOWNLOAD_DIR "${OPEN3D_THIRD_PARTY_DOWNLOAD_DIR}/ippicv"
     UPDATE_COMMAND ""

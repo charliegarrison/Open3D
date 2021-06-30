@@ -5,7 +5,7 @@ find_package(Git QUIET REQUIRED)
 ExternalProject_Add(
     ext_librealsense
     PREFIX librealsense
-    URL https://github.com/IntelRealSense/librealsense/archive/refs/tags/v2.44.0.tar.gz #  2020 Apr 1
+    URL "https://github.com/IntelRealSense/librealsense/archive/refs/tags/v2.44.0.tar.gz #  2020 Apr 1"
     URL_HASH SHA256=5b0158592646984f0f7348da3783e2fb49e99308a97f2348fe3cc82c770c6dde
     DOWNLOAD_DIR "${OPEN3D_THIRD_PARTY_DOWNLOAD_DIR}/librealsense"
     UPDATE_COMMAND ""

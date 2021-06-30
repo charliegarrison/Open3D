@@ -30,7 +30,7 @@ endif()
 ExternalProject_Add(
     ext_zeromq
     PREFIX zeromq
-    URL https://github.com/zeromq/libzmq/releases/download/v4.3.3/zeromq-4.3.3.tar.gz
+    URL "https://github.com/zeromq/libzmq/releases/download/v4.3.3/zeromq-4.3.3.tar.gz"
     URL_HASH SHA256=9d9285db37ae942ed0780c016da87060497877af45094ff9e1a1ca736e3875a2
     DOWNLOAD_DIR "${OPEN3D_THIRD_PARTY_DOWNLOAD_DIR}/zeromq"
     # do not update
@@ -58,7 +58,7 @@ ExternalProject_Add(
 # cppzmq is header only. we just need to download
 FetchContent_Declare(
     ext_cppzmq
-    URL https://github.com/zeromq/cppzmq/archive/v4.7.1.tar.gz
+    URL "https://github.com/zeromq/cppzmq/archive/v4.7.1.tar.gz"
     URL_HASH SHA256=9853e0437d834cbed5d3c223bf1d755cadee70e7c964c6e42c4c6783dee5d02c
     DOWNLOAD_DIR "${OPEN3D_THIRD_PARTY_DOWNLOAD_DIR}/zeromq"
 )

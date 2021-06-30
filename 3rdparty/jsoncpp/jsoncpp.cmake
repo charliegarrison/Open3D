@@ -5,7 +5,7 @@ find_package(Git QUIET REQUIRED)
 ExternalProject_Add(
     ext_jsoncpp
     PREFIX jsoncpp
-    URL https://github.com/open-source-parsers/jsoncpp/archive/refs/tags/1.9.4.tar.gz
+    URL "https://github.com/open-source-parsers/jsoncpp/archive/refs/tags/1.9.4.tar.gz"
     URL_HASH SHA256=e34a628a8142643b976c7233ef381457efad79468c67cb1ae0b83a33d7493999
     DOWNLOAD_DIR "${OPEN3D_THIRD_PARTY_DOWNLOAD_DIR}/jsoncpp"
     UPDATE_COMMAND ""
