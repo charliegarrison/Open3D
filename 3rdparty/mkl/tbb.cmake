@@ -31,7 +31,7 @@ find_package(Git QUIET REQUIRED)
 ExternalProject_Add(
     ext_tbb
     PREFIX tbb
-    URL "https://github.com/wjakob/tbb/archive/141b0e310e1fb552bdca887542c9c1a8544d6503.tar.gz # Sept 2020"
+    URL "https://github.com/wjakob/tbb/archive/141b0e310e1fb552bdca887542c9c1a8544d6503.tar.gz" # Sept 2020
     URL_HASH SHA256=bb29b76eabf7549660e3dba2feb86ab501469432a15fb0bf2c21e24d6fbc4c72
     DOWNLOAD_DIR "${OPEN3D_THIRD_PARTY_DOWNLOAD_DIR}/tbb"
     UPDATE_COMMAND ""
