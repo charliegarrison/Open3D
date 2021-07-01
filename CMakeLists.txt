@@ -109,7 +109,7 @@ if (CCACHE)
     set(CMAKE_C_COMPILER_LAUNCHER ${CCACHE})
     set(CMAKE_CXX_COMPILER_LAUNCHER ${CCACHE})
     if(BUILD_CUDA_MODULE)
-        set(CMAKE_CUDA_COMPILER_LAUNCHER /usr/local/cuda/bin/nvcc)
+        set(CMAKE_CUDA_COMPILER_LAUNCHER ${CCACHE})
     endif()
 endif()
 
